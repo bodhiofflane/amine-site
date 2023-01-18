@@ -1,0 +1,61 @@
+@import './variables.scss';
+
+.btn {
+    background: $second-color;
+    border: none;
+    border-radius: 4px;
+
+    padding: 7px 11px;
+
+    color: $header-color;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s, color 0.3s, font-size 0.3s;
+
+    &:hover {
+        background-color: $main-color;
+        color: $second-color;
+    }
+
+    &:active {
+        font-size: 18px;
+    }
+}
+
+.no-border-radius {
+    padding: 15px 11px;
+
+    color: #E0E0E0;
+    font-size: 14px;
+    border-radius: 0;
+}
+
+.toggle {
+    /* width: 200px; */
+    padding: 10px 15px;
+    margin: 8px;
+
+    color: $second-color;
+
+
+    background-color: $main-color;
+
+    border: 2px solid $border-color;
+    border-radius: 8px;
+
+    transition: background-color 0.3s, color 0.6s;
+
+    cursor: pointer;
+}
+
+.active {
+    background-color: $second-color;
+    color: #E0E0E0;
+
+    box-shadow: 1px 1px 10px $second-color;
+}

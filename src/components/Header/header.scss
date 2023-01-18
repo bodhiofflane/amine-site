@@ -1,0 +1,49 @@
+@import '../../styles/variables.scss';
+
+.header {
+    color: $nav-color;
+    margin-bottom: 60px;
+
+    &__grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+        height: 65px;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    &__navigation {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+    }
+
+    &__title {
+        color: $second-color;
+    }
+
+    &__sing-in {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-self: end;
+    }
+
+    &__link {
+        align-self: center;
+    }
+
+    &__link-active {
+        color: $second-color;
+    }
+
+    &__sing-in-link {
+        justify-self: center;
+        align-self: center;
+
+        font-weight: 70;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+}

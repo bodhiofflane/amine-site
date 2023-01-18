@@ -1,0 +1,109 @@
+@import '../../styles/variables.scss';
+@import '../../styles/button.scss';
+
+.random {
+
+    &__grid-container {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-gap: 20px;
+
+        max-width: 70%;
+        margin: 0 auto;
+        grid-auto-rows: auto;
+    }
+
+    &__random-item {
+        display: grid;
+        border: 2px solid $border-color;
+        grid-template-columns: 40% 60%;
+        border-radius: 8px 30px 30px 8px;
+        overflow: hidden;
+    }
+
+    &__random-img {
+        width: 100%;
+        height: 450px;
+
+        border-right: 2px solid $border-color;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__random-name {
+        padding: 10px 15px;
+
+        color: $header-color;
+        font-size: 25px;
+    }
+
+    &__random-description {
+        padding: 10px 15px;
+
+        color: $text-color;
+        font-size: 16px;
+    }
+
+    &__important {
+        margin-left: 10px;
+
+        font-size: 20px;
+        color: $second-color;
+    }
+
+    &__buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/3;
+        justify-items: stretch;
+
+        border-top: 2px solid $border-color;
+    }
+
+
+    &__random-navigation {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 50%;
+
+        border: 2px solid $border-color;
+        border-radius: 8px 30px 30px 8px;
+    }
+
+    &__search {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+
+        border-bottom: 2px solid $border-color;
+    }
+
+    &__search-title {
+        grid-column: 1/3;
+
+        padding: 10px 15px;
+
+        color: $header-color;
+        font-size: 25px;
+    }
+
+    &__search-bar {
+        display: block;
+        background-color: $main-color;
+
+        padding: 7px 11px;
+
+        color: $text-color;
+
+        border: 2px solid $border-color;
+        border-radius: 4px;
+    }
+
+    &__try-it {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+}
